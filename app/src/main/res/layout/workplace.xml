@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sback2"
+    tools:context=".workplace">
+
+    <LinearLayout
+        android:id="@+id/startLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:foregroundGravity="center"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/playerbut"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:background="@drawable/button1"
+            android:fontFamily="@font/dexter"
+            android:gravity="right|center_vertical"
+            android:text="ИГРОК"
+            android:textColor="#00edff"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/masterbut"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/button2"
+            android:fontFamily="@font/dexter"
+            android:gravity="right|left|center_vertical"
+            android:text="МАСТЕР"
+            android:textColor="#00edff"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/masterLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomLL"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/users"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/dexter"
+                    android:gravity="center"
+                    android:text="Настройка\nпользователей"
+                    android:textColor="#00edff" />
+
+                <TextView
+                    android:id="@+id/roles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/dexter"
+                    android:gravity="center"
+                    android:text="настройка\nролей"
+                    android:textColor="#00edff" />
+
+                <TextView
+                    android:id="@+id/percs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/dexter"
+                    android:gravity="center"
+                    android:text="настройка\nсвойств"
+                    android:textColor="#00edff" />
+
+                <TextView
+                    android:id="@+id/classes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:fontFamily="@font/dexter"
+                    android:gravity="center"
+                    android:text="настройка\nклассов"
+                    android:textColor="#00edff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setupclasses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/classlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:divider="#8A03CDFF"
+                    android:dividerHeight="5dp">
+
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/classname"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/stroke"
+                        android:backgroundTintMode="src_in"
+                        android:ems="10"
+                        android:fontFamily="@font/tech"
+                        android:gravity="start"
+                        android:hint="НАЗВАНИЕ КЛАССА"
+                        android:inputType="textPersonName"
+                        android:textColor="#0CE410"
+                        android:textColorHint="#5EF3F6F3"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/addclass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/justbutton"
+                        android:fontFamily="@font/dexter"
+                        android:shadowColor="#000CFF"
+                        android:shadowDx="7"
+                        android:shadowDy="7"
+                        android:shadowRadius="7"
+                        android:text="Добавить\nкласс"
+                        android:textColor="#00edff"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/removeclass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/justbutton"
+                        android:fontFamily="@font/dexter"
+                        android:shadowColor="#FF000CFF"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="5"
+                        android:text="Удалить\nкласс"
+                        android:textColor="#00edff"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setuproles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/roleslist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:divider="#8A03CDFF"
+                    android:dividerHeight="5dp">
+
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/rolename"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/stroke"
+                        android:backgroundTintMode="src_in"
+                        android:ems="10"
+                        android:fontFamily="@font/tech"
+                        android:gravity="start"
+                        android:hint="НАЗВАНИЕ РОЛИ"
+                        android:inputType="textPersonName"
+                        android:textColor="#0CE410"
+                        android:textColorHint="#5EF3F6F3"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/addrole"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/justbutton"
+                        android:fontFamily="@font/dexter"
+                        android:shadowColor="#000CFF"
+                        android:shadowDx="7"
+                        android:shadowDy="7"
+                        android:shadowRadius="7"
+                        android:text="Добавить\nроль"
+                        android:textColor="#00edff"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/removerole"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/justbutton"
+                        android:fontFamily="@font/dexter"
+                        android:shadowColor="#FF000CFF"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="5"
+                        android:text="Удалить\nроль"
+                        android:textColor="#00edff"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setuppercs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ListView
+                    android:id="@+id/percslist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:dividerHeight="8dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/percsname"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/stroke"
+                        android:backgroundTintMode="src_in"
+                        android:ems="10"
+                        android:fontFamily="@font/tech"
+                        android:gravity="start"
+                        android:hint="НАЗВАНИЕ СВОЙСТВА"
+                        android:inputType="textPersonName"
+                        android:textColor="#0CE410"
+                        android:textColorHint="#5EF3F6F3"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/opt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/tech"
+                        android:textColor="@color/cyberblue"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/opt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/tech"
+                        android:textColor="@color/cyberblue"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/opt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/tech"
+                        android:textColor="@color/cyberblue"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setupusers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/but_exit"
+                android:fontFamily="@font/dexter"
+                android:shadowColor="#000000"
+                android:shadowDx="8"
+                android:shadowDy="8"
+                android:shadowRadius="8"
+                android:text="Выйти из\nсистемы"
+                android:textColor="@color/cyberblue"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
