@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:fontFamily="@font/tech"
+            android:fontFamily="@font/micra"
             android:gravity="center"
             android:shadowColor="#000000"
             android:shadowDx="8"
@@ -25,7 +25,7 @@
             android:shadowRadius="8"
             android:text="Вы уверены, что  хотите\nпокинуть систему?"
             android:textColor="#0CE410"
-            android:textSize="24sp" />
+            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="match_parent"

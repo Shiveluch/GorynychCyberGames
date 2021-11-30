@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/tech"
+                android:fontFamily="@font/tech4"
                 android:shadowColor="#000000"
                 android:shadowDx="5"
                 android:shadowDy="5"
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/tech"
+                android:fontFamily="@font/tech4"
                 android:shadowColor="#000000"
                 android:shadowDx="5"
                 android:shadowDy="5"
@@ -57,10 +57,10 @@
 
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/tech"
+            android:fontFamily="@font/micra"
             android:text="TextView"
             android:textColor="@color/cybergreen"
-            android:textSize="14sp"
+            android:textSize="10sp"
             android:visibility="visible" />
 
     </LinearLayout>

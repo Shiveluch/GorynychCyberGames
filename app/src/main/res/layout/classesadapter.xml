@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_weight="1"
-        android:fontFamily="@font/tech"
+        android:fontFamily="@font/tech4"
         android:shadowColor="#000000"
         android:shadowDx="5"
         android:shadowDy="5"

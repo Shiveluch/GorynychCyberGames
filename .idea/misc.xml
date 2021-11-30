@@ -3,14 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/projects/CyberGames/app/src/main/res/drawable/darkstroke.xml" value="0.1" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/drawable/nostrokedark.xml" value="0.1" />
         <entry key="..\:/projects/CyberGames/app/src/main/res/drawable/stroke.xml" value="0.1" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/addremoveuserdialog.xml" value="0.33" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/changechardialog.xml" value="0.22" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/charlistadapter.xml" value="0.4063157894736842" />
         <entry key="..\:/projects/CyberGames/app/src/main/res/layout/classesadapter.xml" value="0.1578125" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/desccharadapter.xml" value="0.33" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/descdialog.xml" value="0.33" />
         <entry key="..\:/projects/CyberGames/app/src/main/res/layout/dialogue.xml" value="0.25" />
         <entry key="..\:/projects/CyberGames/app/src/main/res/layout/exitdialog.xml" value="0.196875" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/masterchatadapter.xml" value="0.41580756013745707" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/perconsmallinfoadapter.xml" value="0.18125" />
         <entry key="..\:/projects/CyberGames/app/src/main/res/layout/percsadapter.xml" value="0.25" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/personfullinfoadapter.xml" value="0.67" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/roleclassadapter.xml" value="0.17708333333333334" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/roleinfoadapter.xml" value="0.2" />
         <entry key="..\:/projects/CyberGames/app/src/main/res/layout/rolesadapter.xml" value="0.33" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/rolesclassesdialog.xml" value="0.18" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/rolesdialog.xml" value="0.1" />
         <entry key="..\:/projects/CyberGames/app/src/main/res/layout/roleslayout.xml" value="0.18125" />
-        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/workplace.xml" value="0.14" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/transferdialog.xml" value="0.33" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/truncatedialog.xml" value="0.25" />
+        <entry key="..\:/projects/CyberGames/app/src/main/res/layout/workplace.xml" value="0.2" />
       </map>
     </option>
   </component>
